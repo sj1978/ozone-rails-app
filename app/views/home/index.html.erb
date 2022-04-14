@@ -1,0 +1,12 @@
+<div class="jumbotron container badge bg-success" >
+  <h1 class="display-1"><h1>Welcome to the Ozone App</h1>
+  <h5 class="badge bg-success fs-6" >This application created with Ruby On Rails allows you to search by zip code the ozone level in your neighbourhood. US ONLY</h3>
+
+<%= form_with url: "home/zipcode", method: :get do |form| %>
+  <%= form.label :zipcode, "Enter Zip code:", class: "fs-6"%>
+  <%= form.text_field :zipcode %>
+  <%= form.submit "Search",class: "btn btn-outline-warning btn-sm " %>
+<% end %>
+
+  
+</div>
